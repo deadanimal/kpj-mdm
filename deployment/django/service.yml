@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: client-appname-api
+  name: kpj-mdm-api
   labels:
-    service: client-appname-api
+    service: kpj-mdm-api
 spec:
   selector:
-    app: client-appname-api
+    app: kpj-mdm-api
   ports:
   - port: 5000
     targetPort: 5000

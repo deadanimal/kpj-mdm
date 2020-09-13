@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: client-appname-api-redis
+  name: kpj-mdm-api-redis
   labels:
-    deployment: client-appname-api-redis
+    deployment: kpj-mdm-api-redis
 spec:
   selector:
     matchLabels:
-      pod: client-appname-api-redis
+      pod: kpj-mdm-api-redis
   replicas: 1
   template:
     metadata:
       labels:
-        pod: client-appname-api-redis
+        pod: kpj-mdm-api-redis
     spec:
       containers:
       - name: master

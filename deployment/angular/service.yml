@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: client-appname-webapp
+  name: kpj-mdm-webapp
   labels:
-    service: client-appname-webapp
-  name: client-appname-webapp
+    service: kpj-mdm-webapp
+  name: kpj-mdm-webapp
 spec:
   selector:
-    app: client-appname-webapp
+    app: kpj-mdm-webapp
   ports:
   - port: 80
     targetPort: 80

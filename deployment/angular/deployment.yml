@@ -3,24 +3,24 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    name: client-appname-webapp
-  name: client-appname-webapp
+    name: kpj-mdm-webapp
+  name: kpj-mdm-webapp
 spec:
   progressDeadlineSeconds: 2147483647
   replicas: 1
   selector:
     matchLabels:
-      app: client-appname-webapp
+      app: kpj-mdm-webapp
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: client-appname-webapp
+        app: kpj-mdm-webapp
     spec:
       containers:
-      - image: username/client-appname-webapp:1.0.0
+      - image: syafiqpipe/kpj-mdm-webapp:1.0.0
         imagePullPolicy: Always   
-        name: client-appname-webapp
+        name: kpj-mdm-webapp
         resources: {}
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File

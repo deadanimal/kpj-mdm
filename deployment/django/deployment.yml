@@ -1,25 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: client-appname-api-deployment
+  name: kpj-mdm-api-deployment
   labels:
-    app: client-appname-api
+    app: kpj-mdm-api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: client-appname-api
+      app: kpj-mdm-api
   template:
     metadata:
       labels:
-        app: client-appname-api
+        app: kpj-mdm-api
     spec:
       containers:
-      - name: client-appname-api
-        image: username/client-appname-api:1.0.4 #boleh tambah version
+      - name: kpj-mdm-api
+        image: syafiqpipe/kpj-mdm-api:1.0.4 #boleh tambah version
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
         envFrom:
           - secretRef:
-              name: client-appname-api-secret
+              name: kpj-mdm-api-secret

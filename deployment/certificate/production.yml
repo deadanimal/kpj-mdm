@@ -1,7 +1,7 @@
 apiVersion: cert-manager.io/v1alpha2
 kind: ClusterIssuer
 metadata:
-  name: client-appname-prod
+  name: kpj-mdm-prod
   namespace: cert-manager
 spec:
   acme:
@@ -11,7 +11,7 @@ spec:
     email: syafiqbasri@pipeline.com.my
     # Name of a secret used to store the ACME account private key
     privateKeySecretRef:
-      name: client-appname-prod
+      name: kpj-mdm-prod
     # Enable the HTTP-01 challenge provider
     solvers:
     - http01:
