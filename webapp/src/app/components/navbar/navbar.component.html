@@ -47,6 +47,31 @@
 						<i class="ni ni-zoom-split-in"></i>
 					</a>
 				</li>
+				<li class="nav-item">
+					<a class="nav-link" (click)="navigatePage('admin/profile')">
+						Profile
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" (click)="navigatePage('admin/catalog')">
+						Catalog
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" (click)="navigatePage('admin/quality')">
+						Quality
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" (click)="navigatePage('admin/master-data')">
+						Master Data
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" (click)="navigatePage('admin/big-data')">
+						Big Data
+					</a>
+				</li>
 				<li class="nav-item dropdown" dropdown placement="bottom-right">
 					<a class="nav-link dropdown-toggle" role="button" dropdownToggle>
 						<i class="ni ni-bell-55"></i>
@@ -113,7 +138,7 @@
 						</div>
 						<!-- View all -->
 						<a 
-							(click)="navigatePage('notifications')"
+							(click)="navigatePage('/global/notifications')"
 							class="dropdown-item text-center text-primary font-weight-bold py-3"
 						>
 							View all
@@ -138,10 +163,10 @@
 						<div class=" dropdown-header noti-title">
 							<h6 class="text-overflow m-0">Welcome!</h6>
 						</div>
-						<a class="dropdown-item" (click)="navigatePage('profile')">
+						<a class="dropdown-item" (click)="navigatePage('/global/profile')">
 							<i class="fas fa-user fa-fw"></i> <span>My profile</span>
 						</a>
-						<a class="dropdown-item" (click)="navigatePage('settings')">
+						<a class="dropdown-item" (click)="navigatePage('/global/settings')">
 							<i class="fas fa-cogs fa-fw"></i> <span>Settings</span>
 						</a>
 						<div class="dropdown-divider"></div>

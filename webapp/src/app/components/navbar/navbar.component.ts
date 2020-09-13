@@ -85,18 +85,7 @@ export class NavbarComponent implements OnInit {
   }
 
   navigatePage(path: String) {
-    if (path == 'notifications') {
-      return this.router.navigate(['/global/notifications'])
-    }
-    else if (path == 'profile') {
-      return this.router.navigate(['/global/profile'])
-    }
-    else if (path == 'settings') {
-      return this.router.navigate(['/global/settings'])
-    }
-    else if (path == 'home') {
-      return this.router.navigate(['/auth/login'])
-    }
+    return this.router.navigate([path])
   }
 
   successMessage() {

@@ -20,6 +20,11 @@ import { ManagementAuditComponent } from './management-audit/management-audit.co
 import { ManagementUserComponent } from './management-user/management-user.component';
 import { ReportComponent } from './report/report.component';
 import { FaqComponent } from './faq/faq.component';
+import { ProfileComponent } from './profile/profile.component';
+import { CatalogComponent } from './catalog/catalog.component';
+import { QualityComponent } from './quality/quality.component';
+import { MasterDataComponent } from './master-data/master-data.component';
+import { BigDataComponent } from './big-data/big-data.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +32,12 @@ import { FaqComponent } from './faq/faq.component';
     ManagementAuditComponent,
     ManagementUserComponent,
     ReportComponent,
-    FaqComponent
+    FaqComponent,
+    ProfileComponent,
+    CatalogComponent,
+    QualityComponent,
+    MasterDataComponent,
+    BigDataComponent
   ],
   imports: [
     CommonModule,
