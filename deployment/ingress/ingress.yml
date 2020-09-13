@@ -1,0 +1,28 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: client-appname-my-ingress
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "client-appname-my-prod"
+spec:
+  tls:
+  - hosts:
+    - client-appname.pipe.my #guna prototype.com.my untuk prototype
+    - client-appname-api.pipe.my
+
+    secretName: client-appname-my-prod
+
+  rules:
+  - host: client-appname-api.pipe.my
+    http:
+      paths:
+      - backend:
+          serviceName: client-appname-api
+          servicePort: 5000    
+  - host: client-appname.pipe.my
+    http:
+      paths:
+      - backend:
+          serviceName: client-appname-webapp
+          servicePort: 80    
